@@ -1,0 +1,26 @@
+#Task 1
+# Print the first five rows of StackOverflowJobsRecommend column
+print(so_survey_df['StackOverflowJobsRecommend'].head(5))
+
+
+
+
+#Task 2
+# Fill missing values with the mean
+so_survey_df['StackOverflowJobsRecommend'].fillna(so_survey_df['StackOverflowJobsRecommend'].mean(), inplace=True)
+
+# Print the first five rows of StackOverflowJobsRecommend column
+print(so_survey_df['StackOverflowJobsRecommend'].head())
+
+
+
+
+#Task 3
+# Fill missing values with the mean
+so_survey_df['StackOverflowJobsRecommend'].fillna(so_survey_df['StackOverflowJobsRecommend'].mean(), inplace=True)
+
+# Round the StackOverflowJobsRecommend values
+so_survey_df['StackOverflowJobsRecommend'] = round(so_survey_df['StackOverflowJobsRecommend'])
+
+# Print the top 5 rows
+print(so_survey_df['StackOverflowJobsRecommend'].head())

@@ -1,0 +1,36 @@
+#Task 1
+# Import CountVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
+
+# Instantiate CountVectorizer
+cv = CountVectorizer()
+
+# Fit the vectorizer
+cv.fit(speech_df['text_clean'])
+
+# Print feature names
+print(cv.get_feature_names())
+
+
+
+
+#Task 2
+# Apply the vectorizer
+cv_transformed = cv.transform(speech_df['text_clean'])
+
+# Print the full array
+cv_array = cv_transformed.toarray()
+print(cv_array)
+
+
+
+
+Task 3
+# Apply the vectorizer
+cv_transformed = cv.transform(speech_df['text_clean'])
+
+# Print the full array
+cv_array = cv_transformed.toarray()
+
+# Print the shape of cv_array
+print(cv_array.shape)

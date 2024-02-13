@@ -1,0 +1,10 @@
+#Task 1
+# Use method chaining
+so_survey_df['RawSalary'] = so_survey_df['RawSalary']\
+.str.replace(',', '', regex=True)\
+.str.replace('$', '', regex=True)\
+.str.replace('£', '', regex=True)\
+.astype(float)
+ 
+# Print the RawSalary column
+print(so_survey_df['RawSalary'])

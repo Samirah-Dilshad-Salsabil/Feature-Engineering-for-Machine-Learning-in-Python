@@ -1,0 +1,15 @@
+#Task 1
+# Print the top 10 entries of the DataFrame
+print(sub_df.head(10))
+
+
+
+#Task 2
+# Print the locations of the missing values
+print(sub_df.head(10).isnull())
+
+
+
+#Task 3
+# Print the locations of the non-missing values
+print(sub_df.head(10).notnull())
